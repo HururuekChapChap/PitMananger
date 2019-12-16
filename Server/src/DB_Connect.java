@@ -14,9 +14,9 @@ public class DB_Connect {
 	DB_Connect(){
 	
 		try {
-			String sql_name = "jdbc:mysql://localhost:3306/testdb?serverTimezone=UTC";
+			String sql_name = "jdbc:mysql://localhost:3306/tablename?serverTimezone=UTC";
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn = DriverManager.getConnection(sql_name, "root", "@taesoo4239");
+			conn = DriverManager.getConnection(sql_name, "root", "password");
 			
 			System.out.println("connect");
 			
